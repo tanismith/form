@@ -1,0 +1,83 @@
+:root {
+  --color-white: black;
+  --color-pink: lightpink;
+  --color-green: #37af65;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-green);
+  background-image: linear-gradient(
+      115deg,
+      rgba(152, 202, 158, 0.8),
+      rgba(209, 244, 149, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1586880244543-0528a802be97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  max-width: 800px;
+}
+.header {
+  display: block;
+  text-align: center;
+}
+form {
+  display: block;
+  background: rgba(265, 228, 86, 0.9);
+  border-radius: 30px;
+  padding: 2rem;
+}
+.form-group {
+  margin: 0 auto 1rem auto;
+  padding: 0px 2rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+  background-color: #fff;
+  transition: border-color 0.1s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+.input-checkbox,
+.input-radio {
+  margin-left: 30px;
+}
+.textarea {
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.submit-button {
+  background: var(--color-green);
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+}

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+          <h1 id="title">Online shopping preferences</h1>
+      <p id="description"> <em>Thanks for helping us to improve your shopping online experience</em></p>
+        </header>
+      <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input class="form-control" id="email" type="email" name="email" placeholder="example@email.com" pattern=".+@globex.com" size="30" required>
+        </div>
+        <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input class="form-control" id="number" type="number" name="age" placeholder="Enter your age" min="18" max="40">
+        </div>
+        <div class="form-group">
+        <p>How often do your buy products online?</p>
+        <select id="dropdown" name="frecuency" class="form-control" required>
+          <option disabled selected value>Select one option</option>
+          <option value="quiteOften">Quite often</option>
+          <option value="moderatelyOften">Moderality often</option>
+          <option value="slightlyOften">Slightly often</option>
+          <option value="notAtAllOften">Not at all often</option>
+        </select>
+          </div>
+        <div class="form-group">
+          <p>How often do privacy statements prevent you from buying  products online?</p>
+          <label><input type="radio" name="user-comfort-buying" value="always" class="input-radio">Always</input></label>
+        <label><input type="radio" name="user-comfort-buying" value="onceInAWhile" class="input-radio">Once in a while</input></label>
+        <label><input type="radio" name="user-comfort-buying" value="never" class="input-radio">Never</input></label>
+      </div>
+      <div class="form-group">
+        <p>What are your favorites payment methods when buying online?</p>
+        <label><input class="input-checkbox" type="checkbox" name="preferPayment" value="paypal">PayPal</input></label>
+       <label><input class="input-checkbox" type="checkbox" name="preferPayment" value="debitCard">Debit Cart</input></label>
+      <label><input class="input-checkbox" type="checkbox" name="preferPayment" value="creditCard">Credit Cart</input></label>
+      <label><input class="input-checkbox" type="checkbox" name="preferPayment" value="googleCO">Google Checkout</input></label>
+      </div>
+      <div class="form-group"> 
+        <p>Any comments or suggestions?</p>
+        <textarea class="textarea" id="text-area" name="comment" placeholder="Enter your comments or suggestions here..."></textarea>
+      </div>
+      <div class="form-group">
+        <input id="submit" class="submit-button" type="submit"></input>
+      </div>
+      </form>
+      </main>
+</body>
+</html>
